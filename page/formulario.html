@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="stylesheet" href="../css/odontologia.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0 maximun-scale=1.0,user-scalable=no"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link  href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Agenda tu cita</title>
+</head>
+
+<body class="fondo">
+    <header class="header_formulario">
+        <a href="../index.html" class="logo1">
+            <img src="../img/logo.webp" alt="logo"></a>
+            <nav>
+                <a href="../index.html" class="spawn">Inicio</a>
+            </nav>
+    </header>   
+    <form id="fmContact" class="fm_contact">
+        <h2 class="title_form">Ingresa tus datos</h2>
+        <hr/>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" placeholder="Introduce tus Nombres" required/>
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" placeholder="Introduce tus Apellidos" required/>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" placeholder="ejemplo@hotmail.com" required/>
+        <label for="telephone">Teléfono:</label>
+        <input type="tel" id="telephone" placeholder="+57 313 5521223" required/>
+        <button class="btn_enviar" id="btnEnviar">Agendar Cita</button>
+      </form>
+    </section>
+    <section class="allCards">
+        <div class="cardsUsuarios" id="cardsUsuarios"></div>
+    </section>
+    <template id="templateUsuario">
+        <div class="cardUsuarios">
+          <h3 class="title-card"></h3>
+          <h4 class="data-card"></h4>
+          <p class="text-mail"></p>
+          <p class="text-select"></p>
+          <p class="text-telefono"></p>
+          <p class="text-msn"></p>          
+        </div>
+      </template>
+    </form>
+    <script type="module" src="../dist/main.js"></script>
+    <script src="../dist/chat.js"></script>
+</body>
+</html>

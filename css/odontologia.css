@@ -1,0 +1,896 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Paleta de Colores:
+(#2565BB, #82b3f3, #1507dd, #004AAD, #1100ff, #5271FF, #6d7582, rgb(0, 81, 255), rgb(202, 14, 177), rgb(25, 173, 50);)*/
+
+/***************Menu*****************/
+
+.header{
+    width: 100%;  
+    display: flex;
+    position: fixed;
+    min-height: 70px;
+    background-color: #2565BB;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+.logo{
+    padding-left: 30px;
+    display: flex;
+}
+.logo img{
+    padding-left: 30px;
+    height: 70px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+body {    
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav a{
+     font-weight: 600;
+     padding-right: 30px;
+}
+nav a:hover{
+    color: #82b3f3;
+    font-size: 19px;
+}
+
+/***************Página Principal***********************/
+
+.sec_inicio{
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+.sec_inicio > img{
+    width: 100%;
+    opacity: 0.3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sec_inicio > .agendarCita{
+    background-color: #2565BB;
+    border: 30px 50px solid #2565BB ;
+    width: 30%;
+    color: #ffffff;
+    border-bottom: 5px;
+    border-radius: 100% 100% 0% 0%;
+    padding-top: 90px;
+    margin-left: 35vw; 
+    position: absolute; 
+    bottom: 9vw;  
+    opacity: 0.8;
+}
+.agendarCita > h1{
+    font-size: 48px;
+}
+.agenda{
+    width: 50%;
+    margin-top: 3%;
+    padding: 10px 20px;
+    border: 2px solid #1507dd;
+    background-color: #1507dd;
+    border-radius: 20px;
+    margin-top: 25%;
+    margin-bottom: 20%;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.agenda:hover{
+    width: 50%;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.sec_inicio > .infoG{
+    width: 78%;
+    height: auto;
+    display: inline-block;
+    background-color: #1507dd;
+    border: 2px solid #1507dd;
+    margin-top: 1%;
+    opacity: 0.8;
+    padding: 25px;
+    position: absolute;
+    right: 11vw;
+    bottom: 1px;
+    border-radius: 15px;
+}
+.infoG > p{
+    display: inline-block;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding-left: 50px;
+    padding-right: 45px;
+}
+.sec_conocenos{
+    position: relative;
+}
+.sec_conocenos > img{
+    margin-left: 50vh;
+    margin-right: 35vh;
+    margin-top: 50vh;
+}
+.sec_conocenos> h1{
+    position: absolute; 
+    margin-left: 50vw;
+    bottom: 18vw;
+    font-size: 30px;
+}
+.sec_conocenos > p{
+    width: 23%;
+    position: absolute;  
+    margin-left: 50vw;   
+    bottom: 11vw;
+    font-size: 18px;
+}
+.button2{
+    width: 15%;
+    height: 40px;
+    border: 2px solid #004AAD;
+    background-color: #004AAD;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 53vw;
+    bottom: 6vw;
+    text-transform: uppercase;
+}
+.button2:hover{
+    width: 20%;
+    height: 45px;
+    border: 2px solid #1100ff;
+    background-color: #1100ff;
+    border-radius: 25px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.sec_profesional{
+    width: 100%;
+    margin-top: 15vw;
+    margin-left: 14vw;
+}
+.fa-gear, .fa-lightbulb, .fa-thumbs-up{  
+    margin-left: 30px;
+}
+.textos{
+    margin-top: 25px;
+    display: flex;
+}
+.p1{
+    width: 20%;
+    margin-left: 2vw;
+}
+.p2{
+    width: 20%;
+    margin-left: 2vw;
+}
+.p3{
+    width: 20%;
+    margin-left: 6vw;
+}
+.sec_services{
+    margin-top: 10vw;
+    margin-left: 5vw;
+}
+.sec_services > h1{
+    font-size: 50px;
+    margin-right: 7vw;
+}
+.img_services{
+    width: 24%;
+}
+.restauracion{
+    margin-left: 7vw;
+    font-size: 20px;
+}
+.diseñoSonrisa{
+    margin-left: 13vw;
+    font-size: 20px;
+}
+.blanDental{
+    margin-left: 9vw;
+    font-size: 20px;
+}
+.ortodoncia{
+    margin-left: 11vw;
+    font-size: 20px;
+}
+.sec_nosotros{
+    position: relative;
+    margin-top: 10vw;
+}
+.sec_nosotros > img{
+     width: 100%;
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     opacity: 0.5;
+     margin-top: 50px;
+}
+.sec_nosotros > h1{  
+    margin-left: 25px;
+    font-size: 50px;   
+    position: absolute;
+    bottom: 80%;
+}
+.sec_nosotros > h2{
+    margin-left: 25px;
+    font-size: 25px;   
+    position: absolute;
+    bottom: 75%;
+}
+.sec_nosotros > .p_nosotros{
+    width: 40%;
+    margin-left: 25px;
+    font-size: 25px;   
+    position: absolute;
+    bottom: 60%;
+}
+.sec_nosotros > .p1_nosotros{
+    width: 40%;
+    margin-left: 25px;
+    font-size: 25px;   
+    position: absolute;
+    bottom: 45%;
+}
+.sec_nosotros > .p2_nosotros{
+    width: 40%;
+    margin-left: 25px;
+    font-size: 25px;   
+    position: absolute;
+    bottom: 25%;
+}
+
+/**************Footer*****************/
+
+.tex{
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    justify-content: space-evenly;
+}
+
+.footer{
+    background-color: #2565BB;
+    border: 5px solid #2565BB;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes a{
+    text-decoration: none;
+    font-size: 35px;
+    width: 20px;
+    height: 35px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+    padding: 25 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+li{
+    font-size: 20px;
+}
+.redes a :hover{
+    transform: scale(1.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.fb:hover{
+    background: rgb(0, 81, 255);
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.in:hover{
+    background: rgb(202, 14, 177);
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.wh:hover{
+    background: rgb(25, 173, 50);
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.contact{
+    font-size: 60px;
+    margin-left: 2vw;
+}
+
+.linea{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div h2{
+    padding: 10px 0;
+}
+
+.numero{
+    padding: 15px 0;
+}
+
+/***************Formulario*************/
+
+.header_formulario{
+    width: 100%;
+    min-height: 70px;
+    background-color: #2565BB;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.logo1{
+    padding-left: 30px;
+    display: flex;   
+}
+.logo1 img{
+    padding-left: 30px;
+    height: 70px;
+    margin-right: 30px;  
+}
+.fondo{
+    background-image: url(../img/formulario.jpg);
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fm_contact{
+    width: 45%;
+    height: auto;
+    margin: 2% auto;
+    border: 5px solid #004AAD;
+    background-color: #004badc2;
+    border-radius: 10px;
+    padding: 2% 1%;
+    text-align: center;
+}
+.fm_contact{
+    margin-bottom: 3%;
+}
+
+.title_form{
+    margin: 2% 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.fm_contact > input,label,button{
+    display: inline-block;
+    width: 80%;
+    margin: 1% 0;
+    font-size: 22px;
+    border-radius: 15px;
+    color: white;
+}
+
+.fm_contact > input{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 4px solid #1100ff;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+}
+.fm_contact > label{
+    text-align: left;
+    padding: 5px;
+}
+.btn_enviar{
+    width: 30%;
+    margin-top: 3%;
+    padding: 10px 20px;
+    background: #1507dd;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 3px solid #1507dd;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+.btnRegistrar, .btnCancelar{
+    width: 30%;
+    margin-top: 3%;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 3px solid #1507dd;
+    color: black;
+    cursor: pointer;
+}
+.btn_enviar:hover{
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;   
+}
+.card{ 
+    width: 60%;
+    margin: 5% auto;
+    border: 2px solid #1100ff;
+    background-color: #ffffff;
+    text-align: center;
+} 
+.title-card{
+    font-size: 24px;
+    padding: 2%;
+}
+.data-card, .text-mail{
+    font-size: 20px;
+    color: rgb(9, 54, 253);
+    padding: 1% 0;
+} 
+.text-telefono{
+    font-size: 22px;
+    padding: 2% 0;
+}
+.btnRegistrar:hover, .btnCancelar:hover{
+    background: #ffffff;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.alerta{
+    width: 30%;
+    height: auto;
+    background: #004AAD;
+    position: fixed;
+    top: calc(100vh - 65%);
+    left: calc(100vw - 65%);
+    text-align: center; 
+    border: 2px solid #1100ff;
+    padding: 5px;
+}
+.textAlerta{
+    width: 100%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    color: aliceblue;
+    font-size: 20px;
+}
+.btnAlerta{
+    width: 40%;
+    height: auto;
+    margin-right: 1% ;
+    margin-bottom: 3%;
+    border: 2px solid #1100ff;
+    background: #ffffff; 
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: black;
+    padding: 2%;
+    cursor: pointer;
+}
+
+/* estilo de validacion*/
+
+.is-valid{
+    border: 4px solid #05ca0f !important;
+
+}
+.is-invalid{
+    border: 4px solid #e71d1d !important; 
+
+}
+.cardUsuario{ 
+    width: 60%;
+    margin: 5% auto;
+    border: 5px solid #1100ff;
+    background-color: white;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    border-radius: 20px;
+ } 
+.title-card, .data-card, .text-mail, .text-telefono{
+    color: black;
+}
+
+/************Cuidados Odontologicos*************/
+
+.header_CO{
+    width: 100%;
+    display: flex;
+    min-height: 70px;
+    background-color: #2565BB;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    text-transform: uppercase;
+}
+.logo_{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.logo_ img{
+    padding-left: 30px;
+    height: 70px;
+    margin-left: 30px;
+   
+}
+.sec_CO{
+    background-image: url('../img/cuidados.jpg');
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.h1_CO{
+    padding-top: 200px;
+}
+.div_CO{
+    width: 50%;
+    height: auto;
+    background-color: #5271FF;
+    border: 5px solid #5271FF;
+    margin-left: 50vh;
+    border-radius: 20px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.h1__CO{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 2px solid #2565BB;
+    background-color: #2565BB;
+    color: aliceblue;
+    font-size: 50px;
+}
+.section_CO{
+    background-image:  url(../img/numeracion-dientes.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.art{
+    width: 45%;
+    display: inline-block;
+    margin: 5px 1.2%;
+    background: #6d7582;
+    padding: 20px;
+    vertical-align: top;
+    border-radius: 10px;
+    margin-top: 5vw;
+    color: aliceblue;
+}
+.subCO{
+     letter-spacing: 3px;
+
+}
+@media(min-width: 1024px) and (max-width: 1280px){
+
+    /******Principal******/
+    
+    
+    /*****Formulario********/
+    .fm_contact {
+        width: 50%;
+      }   
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+      width: 35%;
+      margin-top: 2%;
+      padding: 8px 18px;
+      font-size: 18px;
+    }
+
+    /*********Cuidados Odontologos***********/
+    .sec_inicio > img{
+        position: relative;
+    }
+    .sec_inicio > .agendarCita{
+        width: 35%;
+        color: #ffffff;
+        margin-left: 35vw; 
+        position: absolute; 
+        bottom: 1vw;  
+    }
+    .div_CO{
+        margin-left: 25%;
+    }
+    .header_CO{
+        width: 100%;
+        align-items: center;
+    }
+    .contact{
+        font-size: 40px;
+        margin-left: 30%;
+    }
+}
+@media(min-width: 912px) and (max-width: 1024px){
+    /*****Formulario Responsivo********/
+    .fm_contact {
+        width: 70%;
+        margin-top: 35%;
+      }  
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+      width: 35%;
+      margin-top: 2%;
+      padding: 8px 18px;
+      font-size: 18px;
+    }
+    .header_formulario{
+        font-size: 30px;    
+    }
+    .logo1 img{
+        padding-top: 1px;
+        height: 12vw;
+        margin-right: 30px; 
+    }
+
+    /*********Cuidados Odontologos***********/
+    .div_CO{
+        margin-left: 25%;
+    }
+    .header_CO{
+        width: 100%;
+    }
+    .redes{
+        min-width: 700px;
+        margin-right: 20%;
+    }
+    .contact{
+        font-size: 40px;
+        margin-left: 80%;
+    }
+    .linea{
+       margin-right: 30%;
+    }
+}
+@media(min-width: 820px) and (max-width: 912px){
+    /*****Formulario Responsivo********/
+    .fm_contact {
+        width: 70%;
+        margin-top: 20%;
+      }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+      width: 35%;
+      margin-top: 2%;
+      padding: 8px 18px;
+      font-size: 18px;
+    }
+    .header_formulario{
+        font-size: 30px;    
+    }
+    .logo1 img{
+        padding-top: 1px;
+        height: 12vw;
+        margin-right: 30px; 
+    }
+     /*********Cuidados Odontologos***********/
+    .div_CO{
+        margin-left: 25%;
+    }
+    .header_CO{
+        width: 100%;
+    }
+    .redes{
+        min-width: 700px;
+        margin-right: 20%;
+    }
+    .contact{
+        font-size: 40px;
+        margin-left: 120%;
+    }
+    .linea{
+       margin-right: 50%;
+    }
+    .tex{
+        gap: 100px;
+    }
+
+   
+}
+@media(min-width: 768px) and (max-width: 819px){
+    /*****Formulario Responsivo********/
+    .fm_contact {
+        width: 70%;
+        margin-top: 20%;
+      }
+      
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+      width: 35%;
+      margin-top: 2%;
+      padding: 8px 18px;
+      font-size: 18px;
+    }
+    .header_formulario{
+        font-size: 25px;    
+    }
+    .logo1 img{
+        padding-top: 2px;
+        height: 12vw; 
+    }
+    /*********Cuidados Odontologos***********/
+    .div_CO{
+        margin-left: 25%;
+    }
+    .header_CO{
+        width: 100%;
+    }
+    .redes{
+        min-width: 700px;
+        margin-right: 20%;
+    }
+    .contact{
+        font-size: 40px;
+        margin-left: 100%;
+    }
+    .linea{
+       margin-right: 20%;
+    }
+    .tex{
+        gap: 70px;
+    }
+    .art{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+}
+@media(min-width: 540px) and (max-width: 768px){
+    /*****Formulario Responsivo********/
+    .fm_contact {
+        width: 80%;
+        margin-top: 5%;
+      }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+      width: 40%;
+      margin-top: 2%;
+      padding: 8px 18px;
+      font-size: 18px;
+    }
+    .header_formulario{
+        font-size: 20px;    
+    }
+    .title_form{
+        font-size: 40px;
+    }
+    .logo1 img{
+        padding-top: 1px;
+        height: 12vw;
+        margin-left: 26vw; 
+    }
+    /*********Cuidados Odontologos***********/
+    .div_CO{
+        margin-left: 25%;
+        margin-top: -50px;
+    }
+    .header_CO{
+        width: 100%;
+    }
+    .redes{
+        min-width: 700px;
+        margin-right: 20%;
+    }
+    .contact{
+        font-size: 40px;
+        margin-left: 110%;
+    }
+    .linea{
+       margin-right: 20%;
+    }
+    .tex{
+        gap: 50px;
+    }
+    .art{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .footer{
+        margin-top: 40px;
+    }
+}
+@media (min-width:300px ) and (max-width: 390px){
+    .div_CO{
+        margin-left: 25%;
+        margin-top: -50px;
+    }
+    .header_CO{
+        width: 100%;
+    }
+    .navlink{
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+    }
+    .div_CO{
+        width: 70%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .redes{
+        min-width: 700px;
+        margin-right: 20%;
+    }
+    .contact{
+        font-size: 40px;
+        margin-left: 110%;
+    }
+    .linea{
+       margin-right: 20%;
+    }
+    .tex{
+        gap: 50px;
+    }
+    .art{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .footer{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .redes{
+        width: 10%;
+    }
+}
+
+
+
+
+
